@@ -1,39 +1,50 @@
-#include "sort.h"
+#include <stdio.h>
 
-/**
- * shell_sort -> Sorts an aray of intgrs in ascending order
- * @array: Aray Intgrs
- * @size: Aray's size
- **/
+void printArray(int *array, size_t size) {
+    for (size_t i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+}
 
-void shell_sort(int *array, size_t size)
-{
-	size_t kun[1000], k = 0, j = 0, i;
-	int n, k;
+void shell_sort(int *array, size_t size) {
+    // Generating the Knuth sequence
+    int gap = 1;
+    while (gap <= (int)size / 3) {
+        gap = gap * 3 + 1;
+    }
 
-	if (!array)
-		return;
-	while (j * 3 + 1 < size)
-	{
-		kun[k] = j * 3 + 1;
-		j = kun[k++];
-	}
-	for (i = 0; i < k; i++)
-	{
-		for (j = 0; j < size; j++)
-		{
-			if ((j + kun[k - i - 1]) > size - 1)
-				break;
-			k = j;
-			while (array[k] > array[k + kun[k - i - 1]])
-			{
-				n = array[k];
-				array[k] =  array[k + kun[k - i - 1]];
-				array[k + kun[k - i - 1]] = n;
-				k = k - kun[k - i - 1];
-				if (k < 0)
-					break;
-			}
-		} print_array(array, size);
-	}
+    while (gap > 0) {
+        for (size_t i = gap; i < size; i++) {
+            int temp = array[i];
+            size_t j = i;
+
+            while (j >= gap && array[j - gap] > temp) {
+                array[j] = array[j - gap];
+                j -= gap;
+            }
+
+            array[j] = temp;
+        }
+
+        printf("Gap %d: ", gap);
+        printArray(array, size);
+
+        gap = (gap - 1) / 3;
+    }
+}
+
+int main() {
+    int array[] = {38, 55, 12, 91, 34, 67, 3, 84};
+    size_t size = sizeof(array) / sizeof(array[0]);
+
+    printf("Original array: ");
+    printArray(array, size);
+
+    shell_sort(array, size);
+
+    printf("Sorted array: ");
+    printArray(array, size);
+
+    return 0;
 }
