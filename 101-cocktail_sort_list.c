@@ -1,8 +1,8 @@
 #include "sort.h"
 /**
- * swap1 -> swaps nodes from left to right
- * @list: List
- * @head: Head Node
+ * swap1 -> swps nodes from lft to rht
+ * @list: Lst
+ * @head: Hed Node
  * @aux: Auxiliar Node
  */
 
@@ -23,9 +23,9 @@ void swap1(listint_t **list, listint_t *head, listint_t *aux)
 }
 
 /**
- * swap2 -> Swaps nodes from right to left
- * @list: List
- * @head: Head Node
+ * swap2 -> Swps nodes frm rht to lft
+ * @list: Lst
+ * @head: Hed Node
  * @aux: Auxiliar Node
  */
 
@@ -46,8 +46,8 @@ void swap2(listint_t **list, listint_t *head, listint_t *aux)
 }
 
 /**
- * cocktail_sort_list -> sorts a doubly linked list of integers
- * @list: List
+ * cocktail_sort_list -> sorts a dbly lnkd lst of intgrs
+ * @list: Lst
  **/
 
 void cocktail_sort_list(listint_t **list)
