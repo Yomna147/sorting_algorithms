@@ -2,7 +2,7 @@
 
 /**
  * insertion_sort_list -> Sorts a dbly lnked lst of integers
- * @list: Dbly Lnked Lst
+ * @list: Dbly Lnked List
  */
 
 void insertion_sort_list(listint_t **list)
