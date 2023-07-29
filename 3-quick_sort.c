@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * quick_sort_rec -> Sorts an aray of intgrs in ascending order
+ * qik_srt_rec -> Srts an ary of intgrs in asending ordr
  * @ary: Aray Intgrs
  * @sze: Aray's size
  * @ary_init: Initial Aray
@@ -45,7 +45,7 @@ void quick_sort_rec(int *array_init, size_t size_init, int *array, size_t size)
 }
 
 /**
- * quick_sort -> Sorts an aray of intgrs in ascending order
+ * qik_srt -> Srts an ary of intgrs in asnding ordr
  * @ary: Aray Intgrs
  * @sze: Aray's size
 **/
