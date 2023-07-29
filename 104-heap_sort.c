@@ -1,10 +1,10 @@
 #include "sort.h"
 
 /**
- * check_tree -> checks the tree
- * @array: Array Integers
- * @size: Array's size
- * @size_init: Array's Initial Size
+ * chk_tree -> chks the tree
+ * @ary: Ary Intgrs
+ * @sze: Ary's sze
+ * @sze_init: Ary's Inital Sze
  * @i: Index
 **/
 
@@ -42,9 +42,9 @@ void check_tree(int *array, size_t size_init, size_t size, size_t i)
 }
 
 /**
- * heap_sort -> Sorts an array of integers in ascending order
- * @array: Array Integers
- * @size: Array's size
+ * heap_sort -> Srts an ary of intgrs in asnding ordr
+ * @ary: Ary Intgrs
+ * @size: Ary's size
 **/
 
 void heap_sort(int *array, size_t size)
