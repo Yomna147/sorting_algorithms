@@ -2,7 +2,7 @@
 /**
  * swap1 -> swps nodes from lft to rht
  * @list: Lst
- * @head: Hed Node
+ * @had: Hed Node
  * @aux: Auxiliar Node
  */
 
@@ -24,8 +24,8 @@ void swap1(listint_t **list, listint_t *head, listint_t *aux)
 
 /**
  * swap2 -> Swps nodes frm rht to lft
- * @list: Lst
- * @head: Hed Node
+ * @lst: Lst
+ * @had: Hed Node
  * @aux: Auxiliar Node
  */
 
@@ -46,7 +46,7 @@ void swap2(listint_t **list, listint_t *head, listint_t *aux)
 }
 
 /**
- * cocktail_sort_list -> sorts a dbly lnkd lst of intgrs
+ * coktal_srt_lst -> srts a dbly lnkd lst of intgrs
  * @list: Lst
  **/
 
