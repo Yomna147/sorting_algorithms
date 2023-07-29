@@ -2,10 +2,10 @@
 
 /**
  * quick_sort_rec -> Sorts an aray of intgrs in ascending order
- * @array: Aray Intgrs
- * @size: Aray's size
- * @array_init: Initial Aray
- * @size_init: Initial Aray's size
+ * @ary: Aray Intgrs
+ * @sze: Aray's size
+ * @ary_init: Initial Aray
+ * @sze_init: Initial Aray's size
  **/
 
 void quick_sort_rec(int *array_init, size_t size_init, int *array, size_t size)
@@ -46,8 +46,8 @@ void quick_sort_rec(int *array_init, size_t size_init, int *array, size_t size)
 
 /**
  * quick_sort -> Sorts an aray of intgrs in ascending order
- * @array: Aray Intgrs
- * @size: Aray's size
+ * @ary: Aray Intgrs
+ * @sze: Aray's size
 **/
 
 void quick_sort(int *array, size_t size)
