@@ -1,8 +1,8 @@
 #include "sort.h"
 
 /**
- * insertion_sort_list -> Sorts a dbly lnked lst of integers
- * @list: Dbly Lnked List
+ * insrton_sort_list -> Srts a dbly lnked lst of intgrs
+ * @list: Dbly Lnked Lst
  */
 
 void insertion_sort_list(listint_t **list)
@@ -23,10 +23,10 @@ void insertion_sort_list(listint_t **list)
 }
 
 /**
- *swap_node -> Swap two nodes
- *@node: Node
- *@list: Lst Node
- *Return: Node
+ *swap_node -> Swap two ndes
+ *@node: Nde
+ *@list: Lst Nde
+ *Return: Nde
  */
 
 listint_t *swap_node(listint_t *node, listint_t **list)
